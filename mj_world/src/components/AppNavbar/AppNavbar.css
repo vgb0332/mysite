@@ -1,0 +1,12 @@
+.app-navbar {
+  width: 100%;
+  height: 3vw;
+  background: pink;
+  text-align: center;
+}
+
+.app-navbar span {
+  line-height: 3vw;
+  font-size: 2vw;
+  letter-spacing: -.7px;
+}
