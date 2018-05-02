@@ -1,16 +1,33 @@
 .app-container {
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 3vw;
 }
 
-.app-container-row {
-  display: flex;
-}
-
-.app-container .app-container-row div{
-  flex: 1;
+.app-container > div {
+  overflow: auto;
+  display: inline-block;
   text-align: center;
-  border:1px solid black;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); /* 그림자 */
+  /* border:1px solid black; */
   height: 50vw;
-  line-height: 50vw;
+  width: 49%;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-container div {
+      width: 99%;
+    }
+}
+
+.app-container > div.active {
+  position: fixed;
+  left: 15px;
+  top: 3vw;
+  width: 96%;
+  height: 96%;
+  transition: all 0.3s;
+  z-index: 2;
+  background: #ffffff;
 }

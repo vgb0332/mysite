@@ -1,0 +1,14 @@
+.palette {
+  display: inline-flex;
+}
+
+.palette div {
+  opacity: 0.5;
+  padding : 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.palette div:hover {
+  opacity: 1;
+}

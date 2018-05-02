@@ -4,7 +4,17 @@ import './AppNavbar.css';
 const AppNavbar = () => {
   return (
     <div className="app-navbar">
-      <span>this is the navbar</span>
+
+      <div id="mj" className="fmc-nav-container">
+        <div className="fmc-box"></div>
+        <div className="fmc-box"></div>
+        <div className="fmc-box"></div>
+        <div className="fmc-box"></div>
+        {/* <div className="fmc-box"></div>
+        <div className="fmc-box"></div> */}
+      </div>
+
+      <span>NAVIGATIONNN</span>
     </div>
   );
 };

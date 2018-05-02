@@ -10,7 +10,7 @@ class App extends Component {
       <React.Fragment>
         <AppNavbar />
         <AppContainer />
-        <AppFooter />
+        {/* <AppFooter /> */}
       </React.Fragment>
     );
   }
