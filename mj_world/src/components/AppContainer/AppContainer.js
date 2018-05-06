@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './AppContainer.css';
 
 import { TodoList } from '../TodoList/TodoList';
+import { Immutable } from '../Immutable/Immutable';
 import { FullWindow } from './Common/FullWindow/FullWindow';
 
 class AppContainer extends Component {
@@ -15,7 +16,11 @@ class AppContainer extends Component {
           name : 'TodoList',
           item : <TodoList />
         },
-        
+        {
+          name : 'Immutable',
+          item : <Immutable />
+        },
+
       ]
     };
   }
@@ -73,12 +78,10 @@ class AppContent extends Component {
   }
 
   handleExpand() {
-    console.log('expand');
     this.props.onFullWindow(this.props.id, true);
   }
 
   handleMinify() {
-    console.log('minify');
     this.props.onFullWindow(this.props.id, false);
   }
 
@@ -86,7 +89,7 @@ class AppContent extends Component {
     const { isFullWindow, name, item, id, targetId } = this.props;
     let style = (id !== targetId && isFullWindow) ?
                 { display: 'none' } : {};
-    console.log('rendered');
+
     return (
       <div style={style}
           className={ this.props.name + ( isFullWindow ? ' active' : '' ) }

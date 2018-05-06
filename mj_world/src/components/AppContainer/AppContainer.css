@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .app-container div {
+    .app-container > div {
       width: 99%;
     }
 }
