@@ -22,6 +22,7 @@ export class Immutable extends Component {
 
   onChange = (e) => {
     const { value } = e.target;
+    console.log(value)
     this.setState({
       input: value
     });
@@ -41,6 +42,7 @@ export class Immutable extends Component {
     this.setState({
       message: 'console을 확인하세요'
     });
+    immutableTest();
   }
 
   render() {
@@ -51,7 +53,7 @@ export class Immutable extends Component {
       'padding': '1vw',
       'margin' : '1vw 0'
     };
-    immutableTest();
+    
     return (
       <div>
         <div>

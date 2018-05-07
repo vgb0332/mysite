@@ -6,10 +6,11 @@ class User extends Component {
   }
   render() {
     const { user: { username } } = this.props;
+    console.log( {user : { username }});
     console.log("%s가 렌더링 되고 있습니다", username);
     return (
       <div>
-        username
+        { username }
       </div>
     );
   }
