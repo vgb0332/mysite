@@ -5,6 +5,7 @@ import { TodoList } from '../TodoList/TodoList';
 import { Immutable } from '../Immutable/Immutable';
 import { FullWindow } from './Common/FullWindow/FullWindow';
 import { Nasa } from '../../containers/Nasa/Nasa';
+import CounterContainer from  '../../containers/CounterContainer';
 
 class AppContainer extends Component {
   constructor(props){
@@ -25,7 +26,10 @@ class AppContainer extends Component {
           name : 'Immutable',
           item : <Immutable />
         },
-
+        {
+          name: 'CounterContainer',
+          item : <CounterContainer />
+        }
       ]
     };
   }
