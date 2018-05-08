@@ -1,0 +1,27 @@
+.viewer-template {
+
+  height: 100%;
+}
+
+.viewer-template header {
+  background: black;
+  /* height: 3vw; */
+  color: white;
+  font-weight: bold;
+  font-size: 2vw;
+  padding: 2vw 0;
+  text-align: left;
+}
+
+.viewer-wrapper {
+  /* position: relative;
+  width: 100%;
+  height: calc(100vh - 5rem); */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.space-navigator-wrapper {
+
+}

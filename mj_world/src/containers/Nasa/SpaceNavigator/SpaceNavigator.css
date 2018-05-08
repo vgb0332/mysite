@@ -1,0 +1,45 @@
+.space-navigator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.end {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.end.left {
+  left: 1rem;
+}
+
+.end.right {
+  right: 1rem;
+}
+
+.space-navigator .circle {
+  width: 3rem;
+  height: 3rem;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.space-navigator .circle:hover{
+  background: rgba(0,0,0,0.25);
+}
+
+.space-navigator .cirle:active {
+  background: rgba(0,0,0,0.5);
+}
+
+.space-navigator .cirle svg {
+   font-size: 2rem;
+}

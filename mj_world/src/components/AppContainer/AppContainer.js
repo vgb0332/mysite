@@ -4,6 +4,7 @@ import './AppContainer.css';
 import { TodoList } from '../TodoList/TodoList';
 import { Immutable } from '../Immutable/Immutable';
 import { FullWindow } from './Common/FullWindow/FullWindow';
+import { Nasa } from '../../containers/Nasa/Nasa';
 
 class AppContainer extends Component {
   constructor(props){
@@ -12,6 +13,10 @@ class AppContainer extends Component {
       isFullWindow: false,
       currentListId: '',
       list: [
+        {
+          name : 'Nasa',
+          item : <Nasa />
+        },
         {
           name : 'TodoList',
           item : <TodoList />
